@@ -11,7 +11,15 @@
 
 <body>
     <div id="app">
-        {{firstname}}
+        <h2>Register Your Child</h2>
+        <label for="firstname">Firstname-</label>
+        <input type="text" id="firstname" v-model="firstname"><br><br>
+        <label for="firstname">Lastname-</label>
+        <input type="text" id="lastname" v-model="lastname"><br><br>
+        <button @click="addStudent">Send</button> <br><br>
+        <li v-for="student in students">
+            {{student.firstname}} <strong>{{student.lastname}}</strong>
+        </li>
     </div>
     <script src="./script.js"></script>
 </body>

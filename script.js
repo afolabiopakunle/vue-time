@@ -12,8 +12,14 @@ new Vue({
         }
     },
     methods: {
-        send() {
-
+        addStudent() {
+            student = {
+                firstname: firstname.value,
+                lastname: lastname.value
+            }
+            this.students.push(student);
+            this.firstname = '';
+            this.lastname = ''
         }
     }
 })
