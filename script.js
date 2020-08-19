@@ -1,5 +1,5 @@
 Vue.component("idea", {
-    component: "<li>Develop another Facebook website</li>"
+    template: "<li>Lights in all Ibadan</li>"
 })
 
 new Vue({

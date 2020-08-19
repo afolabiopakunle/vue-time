@@ -12,20 +12,7 @@
 
 <body>
     <div id="app">
-        <h2 :class="{ done: done }">Register Your Child</h2>
-        <label for="firstname">Firstname-</label>
-        <input type="text" id="firstname" v-model="firstname"><br><br>
-        <label for="firstname">Lastname-</label>
-        <input type="text" id="lastname" v-model="lastname"><br><br>
-        <input type="checkbox" :checked="done" value="Buy oranges">
-        <input type="checkbox" checked>
-
-        <button @click="addStudent">Send</button> <br><br>
-        <li v-for="student in students">
-            {{student.firstname}} <strong>{{student.lastname}}</strong>
-        </li>
-        <input type="checkbox" id="scales" name="scales" checked>
-        <label for="scales">Scales</label>
+        <idea></idea>
     </div>
     <script src="./script.js"></script>
 </body>
